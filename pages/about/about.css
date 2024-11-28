@@ -1,0 +1,92 @@
+
+.aboutContainer{
+    top: 0%;
+    background-image: url('https://plus.unsplash.com/premium_photo-1683309565422-77818a287060?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGJsb2d8ZW58MHx8MHx8fDA%3D'); /* Replace with your background image URL */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+
+
+}
+.about {
+    
+    margin: 0 auto;
+    width: 50%;
+    height: 50%;
+    max-width: 900px;
+    text-align: center;
+    padding: 180px;
+    border-radius: 8px;
+   
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    animation: fadeIn 1s forwards; 
+  }
+  
+
+  .aboutTitle {
+    font-size: 3.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: slideIn 1s forwards;
+    animation-delay: 0.5s;
+  }
+  
+ 
+  .aboutDescription {
+    font-size: 1.8rem;
+    color: #555;
+    line-height: 1.6;
+    opacity: 0;
+    animation: fadeIn 1.5s forwards;
+    animation-delay: 1s;
+  }
+  
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  
+  @keyframes slideIn {
+    from {
+      transform: translateX(-50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  
+  .aboutTitle:hover {
+    color: #000000;
+    transform: scale(1.05);
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .aboutDescription:hover {
+    color: #292828;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+  }
+  
+
+  @media (max-width: 768px) {
+    .aboutTitle {
+      font-size: 2rem;
+    }
+  
+    .aboutDescription {
+      font-size: 1rem;
+    }
+  }
+  
